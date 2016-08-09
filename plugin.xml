@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="com.bais.let.pay"
+    version="1.0">
+
+    <name>PAY Player</name>
+    <description>Let PAY Plugin</description>
+    <license>pearl</license>
+    <keywords>let_pay</keywords>
+    <repo>https://github.com/pearl-wu/letpayDemo.git</repo>
+    <issue>https://github.com/pearl-wu/letpayDemo.git</issue>
+
+    <engines>
+    	<engine name="cordova" version=">=4.0.0"/>
+    </engines>
+
+    <js-module src="www/letpay.js" name="LetPay">
+        <clobbers target="LetPay" />
+    </js-module>
+	
+    <platform name="android">
+	<config-file target="AndroidManifest.xml" parent="/*">
+		<uses-permission android:name="android.permission.INTERNET" />
+	</config-file>
+    	
+        <config-file target="res/xml/config.xml" parent="/*">
+           <feature name="letOrder">
+                <param name="android-package" value="com.bais.let.pay.activity.MainActivity"/>
+            </feature>
+        </config-file>
+
+	<source-file src="src/MainActivity.java" target-dir="src/com/bais/let/pay/activity/" />
+	<source-file src="src/MD5Signature.java" target-dir="src/com/bais/let/pay/activity/" />
+	<source-file src="src/Base64Utils.java" target-dir="src/com/bais/let/pay/activity/" />
+	<source-file src="src/RSAUtils.java" target-dir="src/com/bais/let/pay/activity/" />
+	<source-file src="libs/*" target-dir="libs/" />
+    </platform>
+
+</plugin>

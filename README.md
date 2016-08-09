@@ -1,1 +1,1 @@
-# letpayDEMO
+# Let PAY Plugin
