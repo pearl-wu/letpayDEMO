@@ -34,7 +34,9 @@
 	<source-file src="src/MD5Signature.java" target-dir="src/com/bais/let/pay/activity/" />
 	<source-file src="src/Base64Utils.java" target-dir="src/com/bais/let/pay/activity/" />
 	<source-file src="src/RSAUtils.java" target-dir="src/com/bais/let/pay/activity/" />
-	<source-file src="libs/*" target-dir="libs/" />
+	<source-file src="libs/letvpaysdk_3.0.2.jar" target-dir="libs/" />
+	<source-file src="libs/gson-2.2.4.jar" target-dir="libs/" />
+	<source-file src="libs/2dQrCodeBitmap.jar" target-dir="libs/" />
     </platform>
 
 </plugin>
