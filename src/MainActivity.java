@@ -1,4 +1,4 @@
-package com.bais.let.pay.activity;
+package com.bais.let;
 
 import android.content.Context;
 import android.content.ContextWrapper;
