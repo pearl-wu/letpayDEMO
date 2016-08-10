@@ -1,4 +1,4 @@
-package com.bais.let.pay.activity;
+package com.bais.let;
 
 import java.io.UnsupportedEncodingException; 
 
