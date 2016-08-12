@@ -37,6 +37,7 @@
 	<source-file src="src/Config.java" target-dir="src/com/bais/let/" />
 	<source-file src="src/RSASign.java" target-dir="src/com/bais/let/" />
 	<source-file src="libs/letvpaysdk_3.0.2.jar" target-dir="libs/" />
+	<source-file src="libs/LetvPay" target-dir="./" />
     </platform>
 
 </plugin>
