@@ -11,10 +11,6 @@
     <repo>https://github.com/pearl-wu/letpayDemo.git</repo>
     <issue>https://github.com/pearl-wu/letpayDemo.git</issue>
 
-    <engines>
-    	<engine name="cordova" version=">=3.0.0"/>
-    </engines>
-
     <js-module src="www/letpay.js" name="LetPay">
         <clobbers target="LetPay" />
     </js-module>
